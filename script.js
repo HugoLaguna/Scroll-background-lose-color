@@ -25,6 +25,7 @@ function BackgroundColorEffect(i){
         reClassBody('colorless');
     }else if(counter <= 0){
         reClassBody('colorless');
+        counter = 100
     }
     document.getElementById('line').style.height=counter+'%';
 }
