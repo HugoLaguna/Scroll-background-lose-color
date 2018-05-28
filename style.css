@@ -1,17 +1,5 @@
-.content{
-  transition: all 1200ms ease;
-  background-image: url(background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-sizing: content-box;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-}
 
+/* For Web Example */
 h1{
   color: #fff;
   font-family: Tahoma;
@@ -25,13 +13,22 @@ h1{
   text-shadow: 0 0 7px #000;
 }
 
+.line{
+  position: fixed;
+  background-color: #fff;
+  width: 2px;
+  height: 1%;
+  right: 5px;
+  top: 5px;
+}
+
 h1:last-of-type{
   margin: 52vh 0 0 0;
   font-size: 1.5em;
   z-index: 10;
 }
+
 h1:last-of-type .button{
-  
   background-color: #0f0;
   margin: 0 5px;
   padding: 0 10px;
@@ -41,16 +38,10 @@ h1:last-of-type .button{
   transition: all 200ms ease;
   cursor: pointer;
 }
-h1:last-of-type label:hover ,h1:last-of-type .button:hover{
-  padding: 2px 12px;
-}
-h1:last-of-type label:active, h1:last-of-type .button:active{
-  
-  box-shadow: 0 0 5px #000;
-}
+h1:last-of-type label:hover ,h1:last-of-type .button:hover{ padding: 2px 12px; }
+h1:last-of-type label:active, h1:last-of-type .button:active{ box-shadow: 0 0 5px #000; }
 
-h1:last-of-type label{
-  
+h1:last-of-type label{ 
   cursor: pointer;
   border: 1px solid #555;
   font-size: 0.8em;
@@ -66,31 +57,43 @@ h1 .button.blue{background-color: blue;}
 h1 .button.green{background-color: green;}
 h1 .button.white{background-color: white;border: 1px solid #969696;}
 
-.colorless .content{
+/* finish web example */
+
+.colorless .frontElement{
   opacity: 0;
 }
 
-body{
-  background-image: url(background.jpg);
+/* back Element */
+.backElement{
+  background-image: url(background.jpg); /* Background */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 0;
   /* Color to Blend Effect */
   background-color: #99a1b6;
   /* Efect blend */
   background-blend-mode: luminosity;
-  /* Change */
+  /* For Example Web */
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   overflow: hidden;
 }
 
- .line{
-  position: fixed;
-  background-color: #fff;
-  width: 2px;
-  height: 1%;
-  right: 5px;
-  top: 5px;
-}
+/* Front Element */
+.frontElement{
+    transition: all 1200ms ease;
+    background-image: url(background.jpg); /* Background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* For Example Web */
+    box-sizing: content-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+
